@@ -33,17 +33,19 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #565656;
+  padding: 0 15px;
 }
 
 .card {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 200px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  margin: 15px;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border: 5px solid black;
 }
 
 .card img {
@@ -63,9 +65,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -90,8 +91,7 @@ body {
           transform: none;
 }
 
-.card:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.card:hover {
+  border-color: yellow;
 }
 /*# sourceMappingURL=style.css.map */
