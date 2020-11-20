@@ -90,7 +90,6 @@ body {
 }
 
 .wrapper {
-  background-color: black;
   margin: 2%;
   padding-left: 2%;
   display: -ms-grid;
@@ -123,7 +122,7 @@ body {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 5;
-  z-index: 0;
+  z-index: 1;
 }
 
 .wrapper .ipadImg img {
