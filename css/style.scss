@@ -15,20 +15,28 @@ body {
   // align-items: center;
   background-color: #2e2e2e;
 }
+#svgBG {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  pointer-events: none;
+  img {
+    width: 100%;
+    z-index: -5;
+  }
+}
 .heading {
   display: grid;
   justify-content: center;
   #title {
-    padding: 2rem;
-    font-size: 4rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    font-size: 3rem;
     color: #858585;
   }
 }
 .wrapper {
-  // align-items: center;
-  // justify-items: center;
   display: grid;
-  // margin-top: 10vh;
   grid-template-columns: repeat(4, 1fr);
   background-image: url(/img/back.jpg);
   background-repeat: no-repeat;

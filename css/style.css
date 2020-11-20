@@ -22,6 +22,18 @@ body {
   background-color: #2e2e2e;
 }
 
+#svgBG {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  pointer-events: none;
+}
+
+#svgBG img {
+  width: 100%;
+  z-index: -5;
+}
+
 .heading {
   display: -ms-grid;
   display: grid;
@@ -31,8 +43,9 @@ body {
 }
 
 .heading #title {
-  padding: 2rem;
-  font-size: 4rem;
+  padding: 1rem;
+  padding-bottom: 0;
+  font-size: 3rem;
   color: #858585;
 }
 
