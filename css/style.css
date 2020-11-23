@@ -126,7 +126,7 @@ body {
   background-image: url(../img/back.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  row-gap: 1em;
+  row-gap: 0.75em;
   padding: 4.5rem;
   padding-bottom: 6.0rem;
   z-index: 1;
