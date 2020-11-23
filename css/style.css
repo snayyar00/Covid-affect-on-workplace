@@ -126,8 +126,9 @@ body {
   background-image: url(../img/back.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  row-gap: 1em;
   padding: 4.5rem;
-  padding-bottom: 6.5rem;
+  padding-bottom: 6.0rem;
   z-index: 1;
   height: -webkit-fit-content;
   height: -moz-fit-content;
