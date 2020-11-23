@@ -127,6 +127,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding: 2.5rem;
+  z-index: 1;
 }
 
 .wrapper .card {
