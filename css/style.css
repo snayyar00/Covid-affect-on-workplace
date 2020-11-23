@@ -72,7 +72,7 @@ body {
 .loader {
   border: 16px solid #f3f3f3;
   /* Light grey */
-  border-top: 16px solid #858585;
+  border-top: 16px solid #1e90ff;
   /* Blue */
   border-radius: 50%;
   width: 120px;
