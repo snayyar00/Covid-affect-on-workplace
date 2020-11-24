@@ -17,6 +17,10 @@ body {
   background-color: #2e2e2e;
 }
 
+main {
+  width: 55%;
+}
+
 #svgBG {
   position: fixed;
   width: 100vw;
@@ -76,28 +80,37 @@ body {
 .heading {
   display: grid;
   justify-content: center;
+  align-items: center;
 }
 .heading #title {
-  padding: 1rem;
+  padding: 3rem;
   padding-bottom: 0;
-  font-size: 3rem;
-  color: #858585;
+  font-size: 3.75rem;
+  color: #cac5c5;
+}
+.heading #title2 {
+  padding: 3rem;
+  padding-top: 1.5rem;
+  padding-left: 10rem;
+  padding-bottom: 0;
+  font-size: 1rem;
+  color: #cac5c5;
 }
 
 .wrapper {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(4, 1fr);
-  background-image: url(../img/back.jpg);
+  background-image: url(../img/zoom.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   row-gap: 0.75em;
-  padding: 4.5rem;
-  padding-bottom: 6rem;
+  padding: 8.5rem;
   z-index: 1;
   height: fit-content;
 }
 .wrapper .card {
-  width: 14vw;
+  width: 8vw;
   position: relative;
   cursor: pointer;
   overflow: hidden;
