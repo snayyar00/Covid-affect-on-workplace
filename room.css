@@ -1,0 +1,12 @@
+body{
+    background-image: url(../img/room.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: bisque;
+
+}
+.room{
+background-image: url(../img/room.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
