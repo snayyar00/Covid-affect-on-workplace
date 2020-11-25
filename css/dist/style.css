@@ -115,7 +115,7 @@ main {
   cursor: pointer;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  border: 5px solid black;
+  border: 5px solid #272626;
 }
 .wrapper .card img {
   width: 100%;
