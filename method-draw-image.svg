@@ -1,0 +1,21 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_2" height="400" width="700" y="49.8004" x="50" stroke-width="1.5" fill="#fff"/>
+  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="129.82811" x2="199.76291" y1="50" x1="50" stroke-width="1.5" fill="none"/>
+  <rect stroke="#000" id="svg_4" height="240" width="400" y="130" x="200" stroke-width="1.5" fill="#fff"/>
+  <line stroke="#000" transform="rotate(127.25721740722656 124.9576950073242,409.7175598144531) " stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="445.44755" x2="202.27944" y1="373.98757" x1="47.63593" stroke-width="1.5" fill="none"/>
+  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="389.37193" x2="636.46977" y1="370" x1="600" stroke-width="1.5" fill="none"/>
+  <line stroke="#000" transform="rotate(127.25721740722656 674.6804199218751,90.18991088867186) " stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="125.84365" x2="752.10494" y1="54.53619" x1="597.25591" stroke-width="1.5" fill="none"/>
+  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_9" y2="449.59347" x2="750.06312" y1="418.02818" x1="690.77463" stroke-width="1.5" fill="none"/>
+  <path id="svg_15" d="m635.88889,388.66667c0,0 0,-207.11302 -1.22222,-207.33333c0.33333,0.22222 53.66666,-24.22222 53.33333,-24.44444c0.33333,0.22222 0.33333,258.89041 -0.88889,258.66667c0.33333,0.22222 0.33333,-250 0,-250.22222c0.33333,0.22222 -46.33334,21.55555 -46.33334,21.55555c0,0 0,205.7797 0.55556,205.55556c0.33333,0.22222 -5.44445,-3.77778 -5.44445,-3.77778z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+ </g>
+</svg>
