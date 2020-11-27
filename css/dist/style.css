@@ -101,7 +101,7 @@ main {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
-  background-image: url(../img/zoom.png);
+  background-image: url("../img/zoom.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   row-gap: 0.75em;
