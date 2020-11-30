@@ -15,98 +15,99 @@ body {
   // align-items: center;
   background-color: #2e2e2e;
 }
-main{
-  width: 55%;
-  
-}
 
 #svgBG {
   position: fixed;
   width: 100vw;
   bottom: 0;
   pointer-events: none;
+
+  z-index: -2;
   img {
     width: 100%;
-    z-index: 2;
   }
 }
-.preloader{
+.preloader {
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
-  background:#232323;
+  background: #232323;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: opacity 0.5s ease;
   z-index: 1;
-  p{
+  p {
     position: absolute;
     top: 75%;
     transform: translateY(-75%);
     color: white;
     font-size: 30px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
-
   }
-
 }
-.preloader-finish{
+.preloader-finish {
   opacity: 0;
   pointer-events: none;
-
 }
 
-.loader{
+.loader {
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #1e90ff; /* Blue */
   border-radius: 50%;
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
-  
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .heading {
   display: grid;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
+  text-align: center;
   #title {
-    padding: 3rem;
-    padding-bottom: 0;
-    font-size: 3.75rem;
+    padding: 0.2em;
+    // padding-bottom: 0;
+    // font-size: 3.75rem;
+    /*
+    #{"max(1vw, 20px)"}
+    we have to use min & max function in this format else the live sass compiler gives error.
+    */
+    font-size: #{"min(6vw,3.5rem)"};
     color: #cac5c5;
+    padding-bottom: 0;
   }
   #title2 {
-    padding: 3rem;
-    padding-top: 1.5rem;
-    padding-left: 10rem;
-    padding-bottom: 0;
-    font-size: 1rem;
+    padding: 0.2em;
+    font-size: #{"min(2vw,1rem)"};
     color: #cac5c5;
   }
 }
 .wrapper {
   display: grid;
-  width: 100%;
+  // width: 70%;
+  margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
-  background-image: url("../img/zoom.png");
+  background-image: url(../img/zoom.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   row-gap: 0.75em;
-  
-  padding: 8.5rem;
+
+  padding: 5rem 8.5rem 7rem;
   //padding-bottom: 9.0rem;
-  z-index: 1;
-  
+  // z-index: 3;
+
   height: fit-content;
- 
+
   .card {
     width: 8vw;
     position: relative;

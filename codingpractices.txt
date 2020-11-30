@@ -1,0 +1,4 @@
+- use relative path, i.e. instead of "room.js" use "./room.js"
+- excess code which isn't getting used. (the .room class in room.css file)
+- use precise css selectors, .classname div isn't same as .classname > div, avoid generalized ones unless you're class names or instead
+- clean the code after you're done coding. The extra code causes confusion.

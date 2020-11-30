@@ -22,20 +22,16 @@ body {
   background-color: #2e2e2e;
 }
 
-main {
-  width: 55%;
-}
-
 #svgBG {
   position: fixed;
   width: 100vw;
   bottom: 0;
   pointer-events: none;
+  z-index: -2;
 }
 
 #svgBG img {
   width: 100%;
-  z-index: 2;
 }
 
 .preloader {
@@ -110,42 +106,37 @@ main {
 .heading {
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 .heading #title {
-  padding: 3rem;
-  padding-bottom: 0;
-  font-size: 3.75rem;
+  padding: 0.2em;
+  /*
+    max(1vw, 20px)
+    we have to use min & max function in this format else the live sass compiler gives error.
+    */
+  font-size: min(6vw,3.5rem);
   color: #cac5c5;
+  padding-bottom: 0;
 }
 
 .heading #title2 {
-  padding: 3rem;
-  padding-top: 1.5rem;
-  padding-left: 10rem;
-  padding-bottom: 0;
-  font-size: 1rem;
+  padding: 0.2em;
+  font-size: min(2vw,1rem);
   color: #cac5c5;
 }
 
 .wrapper {
   display: -ms-grid;
   display: grid;
-  width: 100%;
+  margin: 0 auto;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   background-image: url(../img/zoom.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   row-gap: 0.75em;
-  padding: 8.5rem;
-  z-index: 1;
+  padding: 5rem 8.5rem 7rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

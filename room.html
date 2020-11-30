@@ -1,38 +1,92 @@
 <!DOCTYPE html>
 <html>
- 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="room.js" ></script>
-<link rel="stylesheet" href="room.css">
-
-</head>
-<body  >
-  <div class="container">
-    <div class="scroller">
-      <div class="current">
-        <div class="back">
-          
-        </div>
-        <div class="left">
-          
-        </div>
-        <div class="right">
-          
-        </div>
-        <div class="bottom">
-        
-        </div>
-        <div class="top">
-        
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/room.js"></script>
+    <!-- <link rel="stylesheet" href="./room.css"> -->
+    <link rel="stylesheet" href="./css/newroom.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="scroller">
+        <div class="current">
+          <div style="background-color: red" class="back">
+            <div class="outer-frame">
+              <div class="inner-frame" id="window1">
+                <div class="window"></div>
+              </div>
+              <div class="inner-frame" id="window2">
+                <div class="window"></div>
+              </div>
+            </div>
+          </div>
+          <div style="background-color: yellow" class="left"></div>
+          <div style="background-color: yellowgreen" class="right">
+            <div class="gate-frame">
+              <div class="gate"></div>
+            </div>
+          </div>
+          <div style="background-color: seagreen" class="bottom"></div>
+          <div style="background-color: royalblue" class="top"></div>
         </div>
       </div>
-      
     </div>
-  </div>
+    <div id="image-container">
+      <div
+        class="user-profile"
+        onmouseout="hideImage.call(this)"
+        onmouseover="showImage.call(this)"
+        data-userId="user1"
+        style="background-image: url(./userprofiles/Emilypage1.jpg)"
+      ></div>
+      <div
+        class="user-profile"
+        onmouseout="hideImage.call(this)"
+        onmouseover="showImage.call(this)"
+        data-userId="user2"
+        style="background-image: url(./userprofiles/PIVOT\ Project.jpg)"
+      ></div>
 
+      <div
+        class="user-profile"
+        onmouseout="hideImage.call(this)"
+        onmouseover="showImage.call(this)"
+        data-userId="user3"
+        style="background-image: url(./userprofiles/Emilypage2.jpg)"
+      ></div>
+      <div
+        class="user-profile"
+        onmouseout="hideImage.call(this)"
+        onmouseover="showImage.call(this)"
+        data-userId="user4"
+        style="background-image: url(./userprofiles/PIVOT\ Project2.jpg)"
+      ></div>
 
-  
-</body>
+      <img
+        class="hide-img"
+        src="./userprofiles/Emilypage1.jpg"
+        alt=""
+        id="user1"
+      />
+      <img
+        class="hide-img"
+        src="./userprofiles/PIVOT Project.jpg"
+        alt=""
+        id="user2"
+      />
+      <img
+        class="hide-img"
+        src="./userprofiles/Emilypage2.jpg"
+        alt=""
+        id="user3"
+      />
+      <img
+        class="hide-img"
+        src="./userprofiles/PIVOT Project2.jpg"
+        alt=""
+        id="user4"
+      />
+    </div>
+  </body>
 </html>
