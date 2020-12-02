@@ -53,15 +53,8 @@ body {
   top: 0;
   left: 0;
 }
-.left,.right{
+.left,.right,.back{
   background-image: url(./roomwall.jpg);
-  width: 101vw;
-  height: 100vh;
-  transform: translate3d(0, 0, -2000px) rotate3d(1,0,0,0.1deg) rotate3d(1,0,0,0deg);
-
-}
-.back{
-  background-image: url(./roombackground-hanna.png);
   width: 101vw;
   height: 100vh;
   transform: translate3d(0, 0, -2000px) rotate3d(1,0,0,0.1deg) rotate3d(1,0,0,0deg);

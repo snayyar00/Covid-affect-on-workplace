@@ -20,16 +20,14 @@ $(document).on('mousemove', function () {
     $(".scroller").css('transform', 'translate3d(0,0,500px) ' + 'rotate3d(1,0,0,' + rotX + 'deg) rotate3d(0,1,0,' + rotY + 'deg) rotate3d(0,0,1,0)');
 });
 function showImage(){
-    let imagetoshow = "#"+this.getAttribute("data-userId");
-    let cssToAdd = "display: block; position: fixed; top: 0; height: 87vh; pointer-events: none; left: 33vw; margin: 0.5rem;";
+    // let imagetoshow = "#"+this.getAttribute("data-userId")+'a';
+    let imagetoshow = "#user-images";
     let el = window.document.querySelector(imagetoshow);
-    // console.log('show '+ imagetoshow);
     el.classList.remove("hide-img");
     el.classList.add("show-img");
 }
 function hideImage(){
-    let imagetoshow = "#"+this.getAttribute("data-userId");
-    let cssToAdd = "display: none;  transition: all 0.2s;";
+    let imagetoshow = "#user-images";
     let el = window.document.querySelector(imagetoshow);
     // console.log('hide '+ imagetoshow);
     el.classList.remove("show-img");
