@@ -26,11 +26,45 @@ function showImage(){
     el.classList.remove("hide-img");
     el.classList.add("show-img");
 }
+function showImageForOne(){
+    // let imagetoshow = "#"+this.getAttribute("data-userId")+'a';
+    let imagetoshow = "#user-images";
+    let el = window.document.querySelector(imagetoshow);
+    el.classList.remove("hide-img");
+    el.classList.add("show-img-one");
+}
 function hideImage(){
     let imagetoshow = "#user-images";
     let el = window.document.querySelector(imagetoshow);
     // console.log('hide '+ imagetoshow);
-    el.classList.remove("show-img");
+    if(el.classList.contains("show-img")){
+        el.classList.remove("show-img");
+    }
+    else{
+        el.classList.remove("show-img-one");
+    }
     el.classList.add("hide-img");
     
+}
+let isVisible = false;
+function showYTembed(){
+    // let imagetoshow = "#"+this.getAttribute("data-userId")+'a';
+    let imagetoshow = "#user-images";
+    let el = window.document.querySelector(imagetoshow);
+    let toggleBtn = window.document.querySelector("#videoToggleBtn");
+    console.log('jac: '+ toggleBtn.classList);
+    
+    if(!isVisible){ 
+        el.classList.remove("hide-img");
+        el.classList.add("show-img-one");
+        toggleBtn.classList.remove("off-btn");
+        toggleBtn.classList.add("on-btn");
+    
+    }else{
+        el.classList.remove("show-img-one");
+        el.classList.add("hide-img");
+        toggleBtn.classList.remove("on-btn");
+        toggleBtn.classList.add("off-btn");
+    }
+    isVisible = !isVisible;
 }

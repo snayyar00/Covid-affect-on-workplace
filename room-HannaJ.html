@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/newroom.css" />
     <style>
       .back {
-        background-image: url(./rooms/hannajroom.png);
+        background-image: url(./rooms/bg-hannaj.png);
         background-position-y: -2.5rem;
         background-size: cover;
         border: 3px solid black;
@@ -23,7 +23,13 @@
     <div class="container">
       <div class="scroller">
         <div class="current">
-          <div style="background-color: white" class="back">
+          <div
+            style="
+              background-image: url('./rooms/bg-hannaj.png');
+              background-size: cover;
+            "
+            class="back"
+          >
             <div class="outer-frame">
               <div class="inner-frame" id="window1">
                 <div class="window"></div>
@@ -57,8 +63,9 @@
     </div>
     <div id="image-container">
       <div id="user-images" class="hide-img">
-        <img src="./userprofiles/HannaJpage1.jpg" alt="" id="user2a" />
-        <img src="./userprofiles/HannaJpage2.jpg" alt="" id="user2b" />
+        <img src="./spread/hannaJ-1.jpg" alt="" />
+        <img src="./spread/hannaJ-2.jpg" alt="" />
+        <!-- <img src="./userprofiles/HannaJpage2.jpg" alt="" id="user2b" /> -->
         <!-- <div
           style="background-color: rebeccapurple; height: 90vh; width: 40vw"
         ></div> -->
@@ -100,16 +107,3 @@
     </div>
   </body>
 </html>
-<!-- 
-  TODO:
-  apple memoji's replace user pic on main screen (fix the size of memojis)
-  
-  back button on the room /  on the laptop 
-  instead of the thumbnail on room page, we can a single memoji
-  need just two images on room page
-  on hover show both the images, on left half and right (can't we join them into one image?)
-  light the border of room
-  lower the window little bit
-  box shadows on the windows of the room.
-  white bg of room
- -->

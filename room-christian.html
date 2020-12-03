@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/room.js"></script>
+    <!-- <link rel="stylesheet" href="./room.css"> -->
+    <link rel="stylesheet" href="./css/newroom.css" />
+    <style>
+      .back {
+        background-image: url(./rooms/emilysroom.jpg);
+        background-position-y: center;
+        border: 3px solid black;
+        width: 100%;
+        height: 100vh;
+        transform: translate3d(0, 0, -2000px) rotate3d(1, 0, 0, 0.1deg)
+          rotate3d(1, 0, 0, 0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="scroller">
+        <div class="current">
+          <div
+            style="
+              background-image: url('./rooms/bg-christian.png');
+              background-size: cover;
+            "
+            class="back"
+          >
+            <div class="outer-frame">
+              <div class="inner-frame" id="window1">
+                <div class="window"></div>
+              </div>
+              <div class="inner-frame" id="window2">
+                <div class="window"></div>
+              </div>
+            </div>
+          </div>
+          <div style="background-color: white" class="left"></div>
+          <div style="background-color: white" class="right">
+            <div class="gate-frame">
+              <div class="gate"></div>
+            </div>
+          </div>
+          <div style="background-color: white" class="bottom"></div>
+          <!-- <div
+            style="background-color: rgba(255, 0, 0, 0.363)"
+            id="jackkk"
+            class="bottom"
+            onclick="window.location.href = 'https://w3docs.com';"
+          ></div> -->
+          <div
+            onclick="window.location.href = './index.html';"
+            id="home-laptop"
+            class="bottom"
+          ></div>
+          <!-- style="background-color: rgba(255, 0, 0, 0.479)" -->
+          <div style="background-color: white" class="top"></div>
+        </div>
+      </div>
+    </div>
+    <div id="image-container">
+      <div id="user-images" class="hide-img">
+        <img src="./spread/christian.png" alt="" />
+      </div>
+
+      <div
+        class="user-profile"
+        onmouseout="hideImage.call(this)"
+        onmouseover="showImageForOne.call(this)"
+        style="background-image: url(./memojis/user-placeholder.png)"
+      ></div>
+      <!-- <div
+        class="user-profile"
+        onmouseout="hideImage.call(this)"
+        onmouseover="showImage.call(this)"
+        data-userId="user3"
+        style="background-image: url(./userprofiles/Emilypage2.jpg)"
+      ></div>
+      <div
+        class="user-profile"
+        onmouseout="hideImage.call(this)"
+        onmouseover="showImage.call(this)"
+        data-userId="user4"
+        style="background-image: url(./userprofiles/PIVOT\ Project2.jpg)"
+      ></div> -->
+
+      <!-- <img
+        class="hide-img"
+        src="./userprofiles/Emilypage2.jpg"
+        alt=""
+        id="user3"
+      />
+      <img
+        class="hide-img"
+        src="./userprofiles/PIVOT Project2.jpg"
+        alt=""
+        id="user4"
+      /> -->
+    </div>
+  </body>
+</html>

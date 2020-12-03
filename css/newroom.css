@@ -105,18 +105,19 @@ body {
   margin-left: 10%;
   display: flex;
   padding: 0.3rem;
-  border: 5px solid black;
+  border: 2px solid black;
+  background-color: white;
   width: max-content;
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
 }
-.inner-frame,
-.inner-frame > .window {
-  padding: 0.5rem;
-  background-color: black;
-  /* this width and height is dependent on (.inner-frame > .window) width and height */
-  width: 13vw;
-  height: 34vh;
-}
+/* .inner-frame,
+.inner-frame > .window { */
+/* padding: 0.5rem;
+  background-color: black; */
+/* this width and height is dependent on (.inner-frame > .window) width and height */
+/* width: 13vw;
+  height: 34vh; */
+/* } */
 .inner-frame {
   display: grid;
   place-content: center;
@@ -124,7 +125,8 @@ body {
 }
 
 .inner-frame > .window {
-  background-color: whitesmoke;
+  border: 3px solid black;
+  background: linear-gradient(#e9adc7, #e9adc7, white);
   margin: auto;
   /* this width and height is dependent on inner-frame width and height */
   width: 12vw;
@@ -201,11 +203,31 @@ Code for image carousel
   border: 2px solid gray;
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
 }
+#user-images-for-1 > img {
+  height: 85vh;
+  margin: auto;
+  border: 2px solid gray;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+iframe {
+  height: 81vh;
+  width: 144vh;
+  margin: auto;
+  border: 2px solid gray;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
 /* #user-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100vw;
 } */
+.show-img-one {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  width: 100vw;
+  margin: auto;
+  /* pointer-events: none; */
+}
 .show-img {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -215,23 +237,26 @@ Code for image carousel
 .hide-img {
   display: none;
 }
+
+.on-btn {
+  box-shadow: 5px 5px 10px 5px rgb(0, 255, 0) !important;
+}
+.off-btn {
+  box-shadow: 5px 5px 10px 5px rgb(255, 0, 0) !important;
+}
 /* ****************************************************** */
 /* ****************************************************** */
 #home-laptop {
-  left: 40vw;
-  top: 69vh;
-  width: 235px;
-  height: 235px;
-  /* height: 36vh; */
+  left: 32vw;
+  top: 55vh;
+  width: 34vw;
+  height: 58vh;
   transform: translate3d(0, 0, -150vh) rotate3d(0, 0, 0, 0deg)
     rotate3d(1, 0, 0, 0deg);
-  background-image: url(../img/laptop-hand-drawn-tool-svgrepo-com.svg),
-    url(../img/table-svgrepo-com.svg), url(../img/bg-white.jpg);
-  background-position: center -7px, bottom;
+  background-image: url(../img/laptop.png), url(../img/table.png);
+  background-position: center 0px, center 95px;
   background-repeat: no-repeat;
-  background-size: 100px, 230px, 93% 50%;
-  /* background-size: 15vh, 35vh; */
+  background-size: 26vh, 34vw;
   border: none;
-  /* z-index: 5555; */
   cursor: pointer;
 }
