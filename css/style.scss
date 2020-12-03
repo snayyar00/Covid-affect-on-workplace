@@ -16,27 +16,39 @@ body {
   background-color: #2e2e2e;
 }
 
+// #svgBG {
+//   position: fixed;
+//   width: 100vw;
+//   height: 100vh;
+//   // height: 1000;
+//   width: 2000px;
+//   background-repeat: no-repeat;
+//   // pointer-events: none;
+//   background-color: rgba(255, 0, 0, 0.404);
+//   z-index: -3;
+//   // background-image: url(../img/bg-map.jpg);
+//   background-size: 2000px;
+//   // background-position: bottom left;
+//   background-position: bottom;
+//   background-attachment: fixed;
+//   img {
+//     width: 200px;
+//     width: 1400px;
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//   }
+// }
 #svgBG {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  // height: 1000;
-  width: 2000px;
   background-repeat: no-repeat;
-  // pointer-events: none;
-  background-color: rgba(255, 0, 0, 0.404);
+  pointer-events: none;
   z-index: -3;
-  // background-image: url(../img/bg-map.jpg);
-  background-size: 2000px;
-  // background-position: bottom left;
-  background-position: bottom;
-  background-attachment: fixed;
-  img {
-    width: 1400px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  }
+  background-image: url(../img/bg-map.jpg);
+  background-position: bottom left;
+  background-size: cover;
 }
 #house-container {
   position: fixed;
@@ -47,6 +59,8 @@ body {
   left: 0;
   z-index: 2;
   .houses {
+    // SID: Comment this make the glows visible
+    display: none;
     position: relative;
     // background-color: rgba(255, 0, 0, 0.7);
     // border: 2px solid rgba(0, 0, 0, 0.479);
@@ -58,7 +72,8 @@ body {
     background-color: rgb(100, 255, 126);
     background-color: white;
     box-shadow: 0px 0px 20px 2px white;
-    animation: glow 2s infinite alternate-reverse;
+    // SID: Un Comment this line to start glowing
+    // animation: glow 2s infinite alternate-reverse;
   }
   @keyframes glow {
     0% {
