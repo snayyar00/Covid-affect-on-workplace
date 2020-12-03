@@ -26,20 +26,12 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  width: 2000px;
   background-repeat: no-repeat;
-  background-color: rgba(255, 0, 0, 0.404);
+  pointer-events: none;
   z-index: -3;
-  background-size: 2000px;
-  background-position: bottom;
-  background-attachment: fixed;
-}
-
-#svgBG img {
-  width: 1400px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  background-image: url(../img/bg-map.jpg);
+  background-position: bottom left;
+  background-size: cover;
 }
 
 #house-container {
@@ -52,6 +44,7 @@ body {
 }
 
 #house-container .houses {
+  display: none;
   position: relative;
   height: 50px;
   width: 50px;
@@ -61,7 +54,6 @@ body {
   background-color: white;
   -webkit-box-shadow: 0px 0px 20px 2px white;
           box-shadow: 0px 0px 20px 2px white;
-  animation: glow 2s infinite alternate-reverse;
 }
 
 @-webkit-keyframes glow {
