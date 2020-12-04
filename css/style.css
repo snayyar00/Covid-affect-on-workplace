@@ -27,11 +27,58 @@ body {
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
-  pointer-events: none;
-  z-index: -3;
+  z-index: -2;
   background-image: url(../img/bg-map.jpg);
   background-position: bottom left;
   background-size: cover;
+}
+
+#download-all-spreads {
+  border: 2px solid #e293c2;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  color: black;
+  background: rgba(255, 255, 255, 0.281);
+  padding: 12px 30px 10px 30px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* Darker background on mouse-over */
+#download-all-spreads:hover {
+  background: rgba(255, 255, 255, 0.644);
+}
+
+#download-all-spreads-2 {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  border: 2px solid #e293c2;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 10px;
+  color: black;
+  background: rgba(255, 255, 255, 0.281);
+  padding: 10px 25px 8px 25px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-size: min(2vw,.8rem);
+  font-weight: bold;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* Darker background on mouse-over */
+#download-all-spreads-2:hover {
+  background: rgba(255, 255, 255, 0.644);
 }
 
 #house-container {

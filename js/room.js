@@ -1,4 +1,5 @@
 var posx, posy;
+let isVisible = false;
 $(document).on('mousemove', function () {
     if (!e) var e = window.event;
     if (e.pageX || e.pageY) {
@@ -27,6 +28,10 @@ function showImage(){
     el.classList.add("show-img");
 }
 function showImageForOne(){
+    if(isVisible){
+        showYTembed();
+    }
+
     // let imagetoshow = "#"+this.getAttribute("data-userId")+'a';
     let imagetoshow = "#user-images";
     let el = window.document.querySelector(imagetoshow);
@@ -36,7 +41,6 @@ function showImageForOne(){
 function hideImage(){
     let imagetoshow = "#user-images";
     let el = window.document.querySelector(imagetoshow);
-    // console.log('hide '+ imagetoshow);
     if(el.classList.contains("show-img")){
         el.classList.remove("show-img");
     }
@@ -46,13 +50,12 @@ function hideImage(){
     el.classList.add("hide-img");
     
 }
-let isVisible = false;
+
 function showYTembed(){
     // let imagetoshow = "#"+this.getAttribute("data-userId")+'a';
-    let imagetoshow = "#user-images";
+    let imagetoshow = "#user-videos";
     let el = window.document.querySelector(imagetoshow);
     let toggleBtn = window.document.querySelector("#videoToggleBtn");
-    console.log('jac: '+ toggleBtn.classList);
     
     if(!isVisible){ 
         el.classList.remove("hide-img");

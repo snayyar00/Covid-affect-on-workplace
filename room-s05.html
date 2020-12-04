@@ -20,6 +20,10 @@
       .outer-frame {
         margin-left: 20%;
       }
+      .user-profile {
+        left: 42.5vw;
+        margin-right: 50px;
+      }
     </style>
   </head>
   <body>
@@ -55,7 +59,20 @@
       </div>
     </div>
     <div id="image-container">
-      <div id="user-images" class="hide-img" style="z-index: 100">
+      <!-- <div id="user-images" class="hide-img" style="z-index: 100">
+        <iframe
+          width="840"
+          height="472.5"
+          src="https://www.youtube.com/embed/wRU3fOz9GX4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div> -->
+      <div id="user-images" class="hide-img">
+        <img src="./spread/s02.jpg" alt="" />
+      </div>
+      <div id="user-videos" class="hide-img" style="z-index: 100">
         <iframe
           width="840"
           height="472.5"
@@ -66,12 +83,21 @@
         ></iframe>
       </div>
 
-      <div
-        id="videoToggleBtn"
-        class="user-profile off-btn"
-        onmouseover="showYTembed()"
-        style="background-image: url(./memojis/s05.png)"
-      ></div>
+      <!-- the styling for #yt-and-spread is in this html file up top -->
+      <div id="yt-and-spread" style="display: flex; width: max-content">
+        <div
+          id="videoToggleBtn"
+          class="user-profile off-btn"
+          onmouseover="showYTembed()"
+          style="background-image: url(./memojis/s05.png)"
+        ></div>
+        <div
+          class="user-profile"
+          onmouseout="hideImage.call(this)"
+          onmouseover="showImageForOne.call(this)"
+          style="background-image: url(./memojis/s05.png)"
+        ></div>
+      </div>
     </div>
   </body>
 </html>
